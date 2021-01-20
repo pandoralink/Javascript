@@ -1,0 +1,45 @@
+{
+	// Place your Javascript 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// $1,$2可以看作定义格式里，某个语句里空格的范围，$0是最终光标位置
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//双引号："" 要进行转义，所以要加斜杠
+	//如果前面定义的语句前面有空格且报错的话，可能是前面的空格带有\r or \n 删掉重新打空格就可以解决
+	"Define HTML": {
+	 	"scope": "javascript,typescript,html",
+	 	"prefix": "html1",
+	 	"body": [
+			"<!DOCTYPE html>",
+			"<html>",
+			"",
+			"<head>",
+			"   <meta charset=\"utf-8\">",
+			"   <meta name=\"viewport\" content=\"width=device-width\">",
+			"   <title></title>",
+			"   <!--<link href=\"\" rel=\"stylesheet\">-->",
+			"</head>",
+			"",
+			"<body>",
+			"$0",	
+			"</body>",
+			"",
+			"<!--<script src=\"\" defer></script>-->",
+			"",
+			"</html>"
+	 	],
+	 	"description": "Define HTML"
+	 }
+}
