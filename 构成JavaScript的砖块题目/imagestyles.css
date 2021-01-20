@@ -1,0 +1,30 @@
+/*换图片的css*/
+.displayed-img{
+	text-align:center;
+	height: 100%;
+    width: 100%;
+}
+img {
+  display: block;
+  height: 10%;
+  width: 10%;
+  float: left;
+  margin-right:10px;
+}
+.full-img {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0,0,0,0);
+  transition-duration: 500ms;
+}
+button{
+	position: absolute;
+}
